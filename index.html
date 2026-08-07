@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كريم | Karim — مطبخ شامي أصيل</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ زخرفة الخاتم (SVG مخفية تُستخدم كأيقونة عبر الصفحة) ============ -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="star8" viewBox="0 0 100 100">
+    <path d="M50 2 L61 32 L92 22 L70 46 L98 50 L70 54 L92 78 L61 68 L50 98 L39 68 L8 78 L30 54 L2 50 L30 46 L8 22 L39 32 Z"/>
+  </symbol>
+</svg>
+
+<!-- ============ الهيدر ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="logo" href="#top">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true"><use href="#star8"/></svg>
+      <span class="logo-text">
+        <strong>كريم</strong>
+        <em>KARIM</em>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="التنقل الرئيسي">
+      <a href="#menu">المنيو</a>
+      <a href="#delivery">التوصيل</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <a class="btn btn-call" href="tel:+963110000000">
+      <svg viewBox="0 0 24 24" class="icon"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4.2c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+      اتصل بنا
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="ablaq-strip" aria-hidden="true"></div>
+</header>
+
+<!-- ============ قسم البطل ============ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow"><svg class="icon-star" viewBox="0 0 100 100"><use href="#star8"/></svg> مطبخ دمشقي منذ ثلاثة أجيال</span>
+      <h1>من قلب الشام<br>إلى مائدتكم</h1>
+      <p class="hero-text">في "كريم" نطبخ كما تعلّمنا في بيوت دمشق القديمة: بهارات تُطحن يدويًا، عجين يُرقّق على المرمر، وأطباق تُقدَّم بالمحبة نفسها التي وُرثت جيلًا بعد جيل.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">تصفّح المنيو</a>
+        <a href="#delivery" class="btn btn-ghost">اطلب توصيل</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>+35</dt><dd>سنة خبرة</dd></div>
+        <div><dt>+40</dt><dd>طبقًا شاميًا</dd></div>
+        <div><dt>30 د</dt><dd>متوسط التوصيل</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-frame">
+        <img src="imagas/imag-1.jpg" alt="طبق مندي شامي فاخر بالأرز واللحم" loading="eager">
+      </div>
+      <svg class="corner corner-tl" viewBox="0 0 100 100" aria-hidden="true"><use href="#star8"/></svg>
+      <svg class="corner corner-br" viewBox="0 0 100 100" aria-hidden="true"><use href="#star8"/></svg>
+    </div>
+  </div>
+  <div class="ablaq-strip flip" aria-hidden="true"></div>
+</section>
+
+<!-- ============ قسم المنيو ============ -->
+<section class="menu-section" id="menu">
+  <div class="section-heading">
+    <span class="eyebrow"><svg class="icon-star" viewBox="0 0 100 100"><use href="#star8"/></svg> قائمتنا</span>
+    <h2>أطباق تُروى قبل أن تُقدَّم</h2>
+    <p>اختر الصنف من الجانب، وتصفّح أطباقنا الشامية الأصيلة — كل طبق بسعره الموضّح أسفل صورته.</p>
+  </div>
+
+  <div class="menu-layout">
+    <!-- الشريط الجانبي على اليمين (تصنيفات المنيو) -->
+    <aside class="menu-categories" aria-label="تصنيفات المنيو">
+      <ul>
+        <li><button class="cat-btn is-active" data-cat="main">
+          <svg class="icon-star sm" viewBox="0 0 100 100"><use href="#star8"/></svg>الأطباق الرئيسية</button></li>
+        <li><button class="cat-btn" data-cat="appetizers">
+          <svg class="icon-star sm" viewBox="0 0 100 100"><use href="#star8"/></svg>المقبلات</button></li>
+        <li><button class="cat-btn" data-cat="hot">
+          <svg class="icon-star sm" viewBox="0 0 100 100"><use href="#star8"/></svg>مشروبات ساخنة</button></li>
+        <li><button class="cat-btn" data-cat="cold">
+          <svg class="icon-star sm" viewBox="0 0 100 100"><use href="#star8"/></svg>مشروبات باردة</button></li>
+        <li><button class="cat-btn" data-cat="sweets">
+          <svg class="icon-star sm" viewBox="0 0 100 100"><use href="#star8"/></svg>الحلويات</button></li>
+      </ul>
+    </aside>
+
+    <!-- شبكة الأطباق -->
+    <div class="menu-grid">
+
+      <!-- الأطباق الرئيسية -->
+      <div class="dish-group is-active" data-group="main">
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-2.jpg" alt="كبة مقلية شامية" loading="lazy"></div>
+          <h3>كبة مقلية</h3>
+          <p>برغل وقمح مطحون محشو بلحم الغنم المفروم والصنوبر، مقلية حتى الذهبية.</p>
+          <span class="price">600ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-3.jpg" alt="شاورما شامية باللحم" loading="lazy"></div>
+          <h3>شاورما شامية</h3>
+          <p>شرائح لحم متبّلة على الطريقة الدمشقية، تُقدَّم مع الطحينة والمخللات البيتية.</p>
+          <span class="price">300ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-4.jpg" alt="مندي لحم على الأرز" loading="lazy"></div>
+          <h3>مندي لحم</h3>
+          <p>أرز بسمتي معطّر بالهيل والمستكة، مطهو مع قطع لحم ضلوع طرية ببطء.</p>
+          <span class="price">1200ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+      </div>
+
+      <!-- المقبلات -->
+      <div class="dish-group" data-group="appetizers">
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-5.jpg" alt="حمص بالطحينة وزيت الزيتون" loading="lazy"></div>
+          <h3>حمص بالطحينة</h3>
+          <p>حمص مهروس ناعم بالطحينة والليمون، مزيّن بزيت الزيتون البكر وحبوب الحمص.</p>
+          <span class="price">200ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-6.jpg" alt="متبل الباذنجان المشوي" loading="lazy"></div>
+          <h3>متبل باذنجان</h3>
+          <p>باذنجان مشوي على الفحم ومهروس مع الطحينة والثوم والليمون.</p>
+          <span class="price">200ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-7.jpg" alt="سلطة فتوش شامية" loading="lazy"></div>
+          <h3>فتوش شامي</h3>
+          <p>خضار طازجة، خبز محمّص مقرمش، ودبس رمان يمنح السلطة نكهتها المميزة.</p>
+          <span class="price">170ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+      </div>
+
+      <!-- مشروبات ساخنة -->
+      <div class="dish-group" data-group="hot">
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-8.jpg" alt="قهوة عربية بالهيل" loading="lazy"></div>
+          <h3>قهوة عربية</h3>
+          <p>تُحمَّص حبوبها بيتيًا وتُطحن مع الهيل، تُقدَّم في دلّة نحاسية تقليدية.</p>
+          <span class="price">120ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-9.jpg" alt="شاي بالنعناع الطازج" loading="lazy"></div>
+          <h3>شاي بالنعناع</h3>
+          <p>شاي أسود مُخمَّر مع أوراق نعناع طازجة، يُقدَّم دافئًا في كأس زجاجي.</p>
+          <span class="price">100ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+      </div>
+
+      <!-- مشروبات باردة -->
+      <div class="dish-group" data-group="cold">
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-10.jpg" alt="مشروب جلاب بالصنوبر" loading="lazy"></div>
+          <h3>عصير برتقال</h3>
+          <p>عصير طازج ومنعش مع الشرائح البرتقال</p>
+          <span class="price">115ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-11.jpg" alt="عصير ليمون بالنعناع" loading="lazy"></div>
+          <h3>ليمون بالنعناع</h3>
+          <p>عصير ليمون طازج مخفوق مع أوراق النعناع، منعش ومثالي مع الأطباق الشامية.</p>
+          <span class="price">115ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+      </div>
+
+      <!-- الحلويات -->
+      <div class="dish-group" data-group="sweets">
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-12.jpg" alt="كنافة نابلسية بالجبنة" loading="lazy"></div>
+          <h3>كنافة نابلسية</h3>
+          <p>عجينة كنافة مقرمشة فوق طبقة جبنة طرية، تُغمَّس بالقطر الدافئ.</p>
+          <span class="price">180ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-13.jpg" alt="معمول محشو بالتمر والجوز" loading="lazy"></div>
+          <h3>معمول</h3>
+          <p>عجينة سميد مطحون ناعم، محشوة بالتمر أو الجوز، مرشوشة بسكر الفانيليا.</p>
+          <span class="price">160ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+        <article class="dish-card">
+          <div class="dish-img"><img src="imagas/imag-14.jpg" alt="بقلاوة بالفستق الحلبي" loading="lazy"></div>
+          <h3>بقلاوة بالفستق</h3>
+          <p>طبقات عجين رقيقة كالحرير محشوة بالفستق الحلبي ومغطاة بالقطر.</p>
+          <span class="price">200ل.س</span>
+          <button class="btn btn-order">اطلب الطبق</button>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ قسم التوصيل ============ -->
+<section class="delivery" id="delivery">
+  <div class="ablaq-strip" aria-hidden="true"></div>
+  <div class="delivery-inner">
+    <div class="delivery-visual">
+      <img src="imagas/imag-15.jpg" alt="توصيل طلبات كريم" loading="lazy">
+      <div class="delivery-badge">
+        <svg class="icon-star" viewBox="0 0 100 100"><use href="#star8"/></svg>
+        <span>توصيل خلال<br><strong>30 دقيقة</strong></span>
+      </div>
+    </div>
+
+    <div class="delivery-copy">
+      <span class="eyebrow eyebrow-light"><svg class="icon-star" viewBox="0 0 100 100"><use href="#star8"/></svg> التوصيل</span>
+      <h2>سفرة كريم تصل إلى بابكم</h2>
+      <p>نوصّل أطباقنا ساخنة وطازجة إلى معظم أحياء المدينة، معبّأة بعناية لتصل كما لو أُعِدَّت للتو.</p>
+
+      <ol class="delivery-steps">
+        <li>
+          <span class="step-num" aria-hidden="true">١</span>
+          <div><h3>اختر أطباقك</h3><p>تصفّح المنيو وأضف كل ما يعجبك من أصناف.</p></div>
+        </li>
+        <li>
+          <span class="step-num" aria-hidden="true">٢</span>
+          <div><h3>أكّد الطلب</h3><p>أرسل طلبك عبر الهاتف أو واتساب وحدّد عنوانك.</p></div>
+        </li>
+        <li>
+          <span class="step-num" aria-hidden="true">٣</span>
+          <div><h3>استلم بسرعة</h3><p>مندوبنا يوصل الطلب ساخنًا خلال نصف ساعة تقريبًا.</p></div>
+        </li>
+      </ol>
+
+      <a href="tel:+963110000000" class="btn btn-primary btn-light">اطلب التوصيل الآن</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ قسم التواصل / الفوتر ============ -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="#top">
+        <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true"><use href="#star8"/></svg>
+        <span class="logo-text"><strong>كريم</strong><em>KARIM</em></span>
+      </a>
+      <p>مطبخ شامي أصيل، من قلب دمشق إلى مائدتكم.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>تواصل معنا</h4>
+      <ul>
+        <li><a href="tel:+963110000000">+963 11 000 0000</a></li>
+        <li><a href="mailto:hello@karim-restaurant.com">hello@karim-restaurant.com</a></li>
+        <li>شارع الحمرا، دمشق</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>أوقات العمل</h4>
+      <ul>
+        <li>يوميًا: ١٢ ظهرًا — ١ فجرًا</li>
+        <li>الجمعة: ٢ ظهرًا — ١ فجرًا</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>تابعنا</h4>
+      <ul class="social-list">
+        <li><a href="#">إنستغرام</a></li>
+        <li><a href="#">فيسبوك</a></li>
+        <li><a href="#">واتساب</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 مطعم كريم — جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script>
+  // تبديل القائمة الجانبية على الجوال
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.querySelector('.main-nav');
+  navToggle.addEventListener('click', () => {
+    const open = mainNav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('.main-nav a').forEach(a => {
+    a.addEventListener('click', () => {
+      mainNav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // تبديل تصنيفات المنيو
+  const catButtons = document.querySelectorAll('.cat-btn');
+  const dishGroups = document.querySelectorAll('.dish-group');
+  catButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      catButtons.forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      const target = btn.dataset.cat;
+      dishGroups.forEach(g => {
+        g.classList.toggle('is-active', g.dataset.group === target);
+      });
+      document.querySelector('.menu-grid').scrollIntoView({behavior:'smooth', block:'nearest'});
+    });
+  });
+
+  // تأكيد بصري عند طلب طبق
+  document.querySelectorAll('.btn-order').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const original = btn.textContent;
+      btn.textContent = 'أُضيف ✓';
+      btn.classList.add('is-added');
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.classList.remove('is-added');
+      }, 1400);
+    });
+  });
+
+  // ظهور تدريجي عند التمرير
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+  }, {threshold: 0.15});
+  document.querySelectorAll('.dish-card, .section-heading, .delivery-copy, .delivery-visual').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
