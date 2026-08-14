@@ -408,11 +408,7 @@ a:focus-visible, button:focus-visible{
   .hero-actions, .hero-stats{ justify-content:center; }
   .hero-text{ margin-inline:auto; }
   .hero-visual{ order:-1; margin-bottom: 20px; }
-   .hero-frame{
-    justify-self: center; 
-  align-self: center;   
-  
-  }
+   .hero-frame{justify-self: center; align-self: center;}
 
   .menu-layout{ grid-template-columns: 1fr; }
   .menu-categories{ position:static; }
